@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    box-sizing: border-box; 
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weatherCard{
+    width: 90%;
+    max-width: 490px;
+    background: linear-gradient(to left bottom, #70c1bd, #4d396c);
+    color: rgba(255, 255, 255, 0.810);
+    /* margin: 100px auto 0; -> To move card at the center of page it can also done by this instead of applying display flex on body.*/
+    padding: 40px;
+    text-align: center;
+    border-radius: 22px;
+    box-shadow: 2px 1px 5px 2px rgb(38, 64, 67);
+}
+
+.searchBar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.searchBar input{
+    height: 60px;
+    width: 310px;
+    background-color: rgba(255, 255, 255, 0.810);
+    border: 0;
+    border-radius: 25px;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+} 
+
+.searchBar button{
+    height: 60px;
+    width: 60px;
+    background-color: rgba(255, 255, 255, 0.810);
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.searchBar button img{
+    width: 17px;
+    margin-top: 6%;
+}
+
+.error h2{
+    font-size: 26px;
+    color: rgba(255, 255, 255, 0.829);
+    margin-top: 50px; 
+    text-align: center;
+}
+
+.error{
+    display: none; 
+}
+
+.weatherInfo > img{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.temp{
+    font-size: 75px;
+    font-weight: 500;
+}
+
+.city{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 27px;
+    margin-top: -10px;
+}
+
+.weatherInfo{
+    display: none;
+}
